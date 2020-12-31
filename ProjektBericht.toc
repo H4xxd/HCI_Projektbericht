@@ -1,0 +1,4 @@
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Blah}{1}{section.1}
+\contentsline {subsection}{Bl\IeC {\"a}h}{2}{section*.2}
+\contentsline {section}{\numberline {2}Blub}{2}{section.2}

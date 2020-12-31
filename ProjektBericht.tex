@@ -1,0 +1,93 @@
+\documentclass[12pt, a4paper]{scrartcl}
+
+%used packages
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{makecell}
+\usepackage{sectsty}
+\usepackage{blindtext}
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead{}
+\fancyhead[R]{\rightmark}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+
+%costum commads
+\newcommand{\mailto}[1]{\href{mailto:#1}{\color{silver}{#1}}}
+\newcommand{\NameMail}[2]{{{#1}}\\{\small\mailto{#2}}}
+\newcommand{\mysubsection}[1]{\subsection*{#1}
+	\addcontentsline{toc}{subsection}{#1}}
+
+%color scheme
+\definecolor{spaceCadet}{HTML}{2D3142}
+\definecolor{independence}{HTML}{4F5F75}
+\definecolor{silver}{HTML}{BFC0C0}
+\definecolor{tumbleweed}{HTML}{D7A28A}
+\definecolor{mandarin}{HTML}{EF8354}
+\definecolor{sinopia}{HTML}{D12911}
+
+%hyperref setup
+\hypersetup{
+	colorlinks,
+	linkcolor=sinopia,
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}
+}
+
+%editig section and subsection style
+%\sectionfont{\color{spaceCadet}}
+%\subsectionfont{\color{independence}}
+
+\begin{document}
+	\begin{titlepage}
+		\raggedleft
+		
+		\textcolor{mandarin}{\rule{1pt}{\textheight}} 
+		\hspace{0.05\textwidth}
+		\parbox[b]{0.85\textwidth}{
+			
+			{\Huge\bfseries \textcolor{spaceCadet}{SmartMirror}}\\[1\baselineskip]
+			{\LARGE \bfseries \textcolor{independence}{Fakultät Informatik Mathematik}}\\[1\baselineskip]
+			{\Large  \textcolor{independence}{OTH Regensburg}}\\[1\baselineskip]
+			{\large \textcolor{independence}{Human Computer Interaction}}\\[2\baselineskip]
+			
+			
+			
+			
+			{\LARGE\bfseries\textcolor{spaceCadet}{Projektbericht}}\\[0.2\baselineskip]
+			{\Large\textcolor{independence}{Wintersemester 2020/2021}} \\[0.2\baselineskip]
+			{\textcolor{independence}{\noindent \today}} \\[3\baselineskip]
+			
+			\vspace{0.4\textheight}
+			\begin{tabular}{ c c }
+				\makecell[l]{\NameMail{Patrick Gruber}{patrick.gruber@st.oth-regensburg.de}}
+				& \makecell[l]{\NameMail{Tobias Gubo}{tobias1.gubo@st.oth-regensburg.de}}\\
+				\makecell[l]{\NameMail{Michael Lazik}{michael1.lazik@st.oth-regensburg.de}} 
+				& \makecell[l]{\NameMail{Marcus Müller}{marcus.mueller@st.oth-regensburg.de}}
+			\end{tabular}\\ [2\baselineskip]
+		}
+		
+	\end{titlepage}
+	
+	\tableofcontents
+	\thispagestyle{empty}
+	\pagebreak
+	\setcounter{page}{1}
+	
+	\section{Blah}
+	\blindtext[5]
+	\mysubsection{Bläh}
+	\blindtext[3]
+	\section{Blub}
+	\blindtext[2]
+	
+\end{document}
