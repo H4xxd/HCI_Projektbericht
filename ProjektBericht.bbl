@@ -1,0 +1,456 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global}
+    \entry{FlutterGet}{online}{}
+      \name{author}{1}{}{%
+        {{hash=c9021f5cdcb65b107d5942bfd5119214}{%
+           family={Borges},
+           familyi={B\bibinitperiod},
+           given={Jonny},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c9021f5cdcb65b107d5942bfd5119214}
+      \strng{fullhash}{c9021f5cdcb65b107d5942bfd5119214}
+      \strng{bibnamehash}{c9021f5cdcb65b107d5942bfd5119214}
+      \strng{authorbibnamehash}{c9021f5cdcb65b107d5942bfd5119214}
+      \strng{authornamehash}{c9021f5cdcb65b107d5942bfd5119214}
+      \strng{authorfullhash}{c9021f5cdcb65b107d5942bfd5119214}
+      \field{labelalpha}{Bor20}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{month}{12}
+      \field{title}{get | Flutter Package}
+      \field{urlday}{17}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pub.dev/packages/get
+      \endverb
+      \verb{url}
+      \verb https://pub.dev/packages/get
+      \endverb
+    \endentry
+    \entry{DartInterfaces}{online}{}
+      \name{author}{1}{}{%
+        {{hash=075676db46622d5a64b6ff1011b9b7d0}{%
+           family={Bracha},
+           familyi={B\bibinitperiod},
+           given={Gilad},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{075676db46622d5a64b6ff1011b9b7d0}
+      \strng{fullhash}{075676db46622d5a64b6ff1011b9b7d0}
+      \strng{bibnamehash}{075676db46622d5a64b6ff1011b9b7d0}
+      \strng{authorbibnamehash}{075676db46622d5a64b6ff1011b9b7d0}
+      \strng{authornamehash}{075676db46622d5a64b6ff1011b9b7d0}
+      \strng{authorfullhash}{075676db46622d5a64b6ff1011b9b7d0}
+      \field{labelalpha}{Bra12}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{6}
+      \field{title}{Proposal to eliminate interface declarations from Dart}
+      \field{urlday}{23}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://jeroenmols.com/blog/2019/04/02/modularizationexample/
+      \endverb
+      \verb{url}
+      \verb https://jeroenmols.com/blog/2019/04/02/modularizationexample/
+      \endverb
+    \endentry
+    \entry{9783955619879}{book}{}
+      \name{author}{4}{}{%
+        {{hash=9bb9c48289834328b03fe2167f2eb3cc}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=8454bd3eef9df58a64496c059b05d188}{%
+           family={Robson},
+           familyi={R\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod}}}%
+        {{hash=e904736cbe85176ef1836de79da638ab}{%
+           family={Sierra},
+           familyi={S\bibinitperiod},
+           given={Kathy},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5c0eff8de2e6e98c8e2b5e2cebcdc292}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={Bert},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {ger}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Verlag}%
+      }
+      \strng{namehash}{5e5277fdd85dbe9d2e758e6e1fe97cf6}
+      \strng{fullhash}{b554eb14f966aa68d709758fff35f534}
+      \strng{bibnamehash}{5e5277fdd85dbe9d2e758e6e1fe97cf6}
+      \strng{authorbibnamehash}{5e5277fdd85dbe9d2e758e6e1fe97cf6}
+      \strng{authornamehash}{5e5277fdd85dbe9d2e758e6e1fe97cf6}
+      \strng{authorfullhash}{b554eb14f966aa68d709758fff35f534}
+      \field{labelalpha}{Fre+15}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{5}
+      \field{edition}{2}
+      \field{isbn}{9783955619879}
+      \field{month}{3}
+      \field{title}{Entwurfsmuster von Kopf bis Fuß}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://content-select.com/de/portal/media/view/5d5fc35e-8810-4c0c-bf27-246bb0dd2d03
+      \endverb
+      \verb{url}
+      \verb https://content-select.com/de/portal/media/view/5d5fc35e-8810-4c0c-bf27-246bb0dd2d03
+      \endverb
+      \keyw{Entwurfsmuster,Java 8,Software-Design}
+    \endentry
+    \entry{GitSubmodule}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0d03e86de72880665fdafdef7524a821}{%
+           family={Git-scm},
+           familyi={G\bibinithyphendelim s\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d03e86de72880665fdafdef7524a821}
+      \strng{fullhash}{0d03e86de72880665fdafdef7524a821}
+      \strng{bibnamehash}{0d03e86de72880665fdafdef7524a821}
+      \strng{authorbibnamehash}{0d03e86de72880665fdafdef7524a821}
+      \strng{authornamehash}{0d03e86de72880665fdafdef7524a821}
+      \strng{authorfullhash}{0d03e86de72880665fdafdef7524a821}
+      \field{labelalpha}{Git}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Git - Submodule}
+      \field{urlday}{16}
+      \field{urlmonth}{1}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://git-scm.com/book/de/v2/Git-Tools-Submodule
+      \endverb
+      \verb{url}
+      \verb https://git-scm.com/book/de/v2/Git-Tools-Submodule
+      \endverb
+    \endentry
+    \entry{hasselbring2006software}{article}{}
+      \name{author}{1}{}{%
+        {{hash=131b9781ee9671d87bd60771bd41a0bc}{%
+           family={Hasselbring},
+           familyi={H\bibinitperiod},
+           given={Wilhelm},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{131b9781ee9671d87bd60771bd41a0bc}
+      \strng{fullhash}{131b9781ee9671d87bd60771bd41a0bc}
+      \strng{bibnamehash}{131b9781ee9671d87bd60771bd41a0bc}
+      \strng{authorbibnamehash}{131b9781ee9671d87bd60771bd41a0bc}
+      \strng{authornamehash}{131b9781ee9671d87bd60771bd41a0bc}
+      \strng{authorfullhash}{131b9781ee9671d87bd60771bd41a0bc}
+      \field{labelalpha}{Has06}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Informatik-Spektrum}
+      \field{number}{1}
+      \field{title}{Software-Architektur}
+      \field{volume}{29}
+      \field{year}{2006}
+      \field{pages}{48\bibrangedash 52}
+      \range{pages}{5}
+    \endentry
+    \entry{EventBus}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e636474584d710b26a2e4ae2bf7dfe74}{%
+           family={Jakob},
+           familyi={J\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \strng{fullhash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \strng{bibnamehash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \strng{authorbibnamehash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \strng{authornamehash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \strng{authorfullhash}{e636474584d710b26a2e4ae2bf7dfe74}
+      \field{labelalpha}{Jak20}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{1}
+      \field{title}{event bus Dart Package}
+      \field{urlday}{1}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://pub.dev/packages/event_bus
+      \endverb
+      \verb{url}
+      \verb https://pub.dev/packages/event_bus
+      \endverb
+    \endentry
+    \entry{BLoC}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4f463b7fb37419443900c1eb8bfd0e69}{%
+           family={Kogut},
+           familyi={K\bibinitperiod},
+           given={Kacper},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \strng{fullhash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \strng{bibnamehash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \strng{authorbibnamehash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \strng{authornamehash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \strng{authorfullhash}{4f463b7fb37419443900c1eb8bfd0e69}
+      \field{labelalpha}{Kog19}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{12}
+      \field{month}{11}
+      \field{title}{Getting Started With Flutter BLoC}
+      \field{urlday}{2}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.netguru.com/codestories/flutter-bloc
+      \endverb
+      \verb{url}
+      \verb https://www.netguru.com/codestories/flutter-bloc
+      \endverb
+    \endentry
+    \entry{CleanArchitecture}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6f41df64eb0dc4855be70172368604c2}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boston, MA}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{fullhash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{bibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorbibnamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authornamehash}{6f41df64eb0dc4855be70172368604c2}
+      \strng{authorfullhash}{6f41df64eb0dc4855be70172368604c2}
+      \field{labelalpha}{Mar17}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system. Now, building upon the success of his best-selling books Clean Code and The Clean Coder, legendary software craftsman Robert C. Martin ('Uncle Bob') reveals those rules and helps you apply them. Martin's Clean Architecture doesn't merely present options. Drawing on over a half-century of experience in software environments of every imaginable type, Martin tells you what choices to make and why they are critical to your success. As you've come to expect from Uncle Bob, this book is packed with direct, no-nonsense solutions for the real challenges you'll face---the ones that will make or break your projects.}
+      \field{isbn}{978-0-13-449416-6}
+      \field{series}{Robert C. Martin Series}
+      \field{title}{Clean Architecture: A Craftsman's Guide to Software Structure and Design}
+      \field{year}{2017}
+      \verb{file}
+      \verb eBook:2017/Martin17.pdf:PDF;Amazon Search inside:http\://www.amazon.de/gp/reader/0134494164/:URL;Inform IT product page:http\://www.informit.com/store/clean-architecture-a-craftsmans-guide-to-software-structure-9780134494166:URL
+      \endverb
+      \verb{urlraw}
+      \verb https://www.safaribooksonline.com/library/view/clean-architecture-a/9780134494272/
+      \endverb
+      \verb{url}
+      \verb https://www.safaribooksonline.com/library/view/clean-architecture-a/9780134494272/
+      \endverb
+      \keyw{01841 103 book safari software architecture development}
+    \endentry
+    \entry{Modularization}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e3d4c56320cba47262e3b3ae65930835}{%
+           family={Mols},
+           familyi={M\bibinitperiod},
+           given={Jeroen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e3d4c56320cba47262e3b3ae65930835}
+      \strng{fullhash}{e3d4c56320cba47262e3b3ae65930835}
+      \strng{bibnamehash}{e3d4c56320cba47262e3b3ae65930835}
+      \strng{authorbibnamehash}{e3d4c56320cba47262e3b3ae65930835}
+      \strng{authornamehash}{e3d4c56320cba47262e3b3ae65930835}
+      \strng{authorfullhash}{e3d4c56320cba47262e3b3ae65930835}
+      \field{labelalpha}{Mol19}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{4}
+      \field{title}{Modularization - Real-life example - Jeroen Mols}
+      \field{urlday}{21}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://jeroenmols.com/blog/2019/04/02/modularizationexample/
+      \endverb
+      \verb{url}
+      \verb https://jeroenmols.com/blog/2019/04/02/modularizationexample/
+      \endverb
+    \endentry
+    \entry{MessageBus}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2671ae6c6db5ec705c03aff6525c40a2}{%
+           family={Neal},
+           familyi={N\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \strng{fullhash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \strng{bibnamehash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \strng{authorbibnamehash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \strng{authornamehash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \strng{authorfullhash}{2671ae6c6db5ec705c03aff6525c40a2}
+      \field{labelalpha}{Nea17}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{month}{3}
+      \field{title}{To Message Bus or Not: Distributed Systems Design | Netlify}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.netlify.com/blog/2017/03/02/to-message-bus-or-not-distributed-systems-design/
+      \endverb
+      \verb{url}
+      \verb https://www.netlify.com/blog/2017/03/02/to-message-bus-or-not-distributed-systems-design/
+      \endverb
+    \endentry
+    \entry{GitSubtree}{online}{}
+      \name{author}{1}{}{%
+        {{hash=63c0842d9a05574805f715554e38aa95}{%
+           family={Paolucci},
+           familyi={P\bibinitperiod},
+           given={Nicola},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{63c0842d9a05574805f715554e38aa95}
+      \strng{fullhash}{63c0842d9a05574805f715554e38aa95}
+      \strng{bibnamehash}{63c0842d9a05574805f715554e38aa95}
+      \strng{authorbibnamehash}{63c0842d9a05574805f715554e38aa95}
+      \strng{authornamehash}{63c0842d9a05574805f715554e38aa95}
+      \strng{authorfullhash}{63c0842d9a05574805f715554e38aa95}
+      \field{labelalpha}{Pao}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Git subtree: the alternative to Git submodule | Atlassian Git Tutorial}
+      \field{urlday}{31}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/git/tutorials/git-subtree
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/git/tutorials/git-subtree
+      \endverb
+    \endentry
+    \entry{WorkingWithSubmodules}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bf2cffa79caa83624da5bcc7ae3289bf}{%
+           family={Wehner},
+           familyi={W\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \strng{fullhash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \strng{bibnamehash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \strng{authorbibnamehash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \strng{authornamehash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \strng{authorfullhash}{bf2cffa79caa83624da5bcc7ae3289bf}
+      \field{labelalpha}{Weh16}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{month}{2}
+      \field{title}{Working with submodules - The GitHub Blog}
+      \field{urlday}{21}
+      \field{urlmonth}{1}
+      \field{urlyear}{2021}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.blog/2016-02-01-working-with-submodules/
+      \endverb
+      \verb{url}
+      \verb https://github.blog/2016-02-01-working-with-submodules/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

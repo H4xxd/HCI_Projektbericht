@@ -9,10 +9,11 @@
 \contentsline {subsection}{\numberline {3.3}Spezifikation des UI}{5}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Prototyping}{6}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}UI Gestaltungsrichtlinien}{7}{subsection.3.5}
-\contentsline {section}{\numberline {4}Aufbau Software System}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}System}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Frontend}{9}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Backend}{9}{subsection.4.3}
+\contentsline {section}{\numberline {4}Aufbau Software System}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}System}{8}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Frontend}{8}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Backend}{8}{subsection.4.3}
 \contentsline {section}{\numberline {5}Evaluierung der Gestaltungsl\IeC {\"o}sung anhand der Nutzungsanforderung}{10}{section.5}
 \contentsline {subsection}{\numberline {5.1}Entwicklungsbegleitende Usability-Tests}{10}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}QuantitativeEvaluierungen}{10}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.2}QuantitativeEvaluierungen}{11}{subsection.5.2}
+\contentsline {section}{\numberline {6}Arbeitsaufteilung}{11}{section.6}

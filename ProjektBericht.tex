@@ -61,7 +61,7 @@
 		\hspace{0.05\textwidth}
 		\parbox[b]{0.85\textwidth}{
 			
-			{\Huge\bfseries \textcolor{spaceCadet}{SmartMirror}}\\[1\baselineskip]
+			{\Huge\bfseries \textcolor{spaceCadet}{Smart Mirror}}\\[1\baselineskip]
 			{\LARGE \bfseries \textcolor{independence}{Fakultät Informatik Mathematik}}\\[1\baselineskip]
 			{\Large  \textcolor{independence}{OTH Regensburg}}\\[1\baselineskip]
 			{\large \textcolor{independence}{Human Computer Interaction}}\\[2\baselineskip]
@@ -95,7 +95,7 @@
 	\end{quote}
 	Wie jedes gute Projekt beginnt man mit der grundlegenden Planung und Strukturierung 
 	\subsection{Festlegen der Resourcen}
-	Der erste und elemetarste Schritt war es sich zu überlegen, wie ein Produkt wie der SmartMirror überhaupt realisiert werden kann. Dafür haben wir uns im Internet auf die Suche gemacht und sind dort an mehreren Stellen auf DIY-Projekte gestoßen, die eine ähnliche Idee umgesetzt haben. Die fundamentalen Bestandteile waren jedoch oft sehr vergleichbar. Man benötigt einen Einwegspiegel, der das Licht von einer Seite durchlässt und von der anderen Seite verspiegelt ist. Mit einem LED-Display hinter der Spiegelscheibe lässt sich so eine Anzeigefläche erschaffen, die für den Betrachter nur sichtbar ist, wenn sie beleuchtet ist. Die Art und Weiße, wie das Display angesprochen wird ist wieder eine freiere Entscheidung. Wir haben uns dafür entschieden einen RaspberryPi 3b zu verwenden. Dies hat mehrere Gründe, die im Laufe des Berichts noch genauer beleuchtet werden.Montiert wird das Spiegeldisplay in einem Rahmen aus Holz, um ein einheitliches Erscheinungsbild zu kreieren. Als letztes wichtiges Element ist noch der LeapMotion-Controller zu nennen, der eine einfache Möglichkeit bildet um die Gestik des Nutzers zu erkennen, um somit die Interaktion zwischen Mensch und Maschine zu ermöglichen.
+	Der erste und elemetarste Schritt war es sich zu überlegen, wie ein Produkt wie der Smart Mirror überhaupt realisiert werden kann. Dafür haben wir uns im Internet auf die Suche gemacht und sind dort an mehreren Stellen auf DIY-Projekte gestoßen, die eine ähnliche Idee umgesetzt haben. Die fundamentalen Bestandteile waren jedoch oft sehr vergleichbar. Man benötigt einen Einwegspiegel, der das Licht von einer Seite durchlässt und von der anderen Seite verspiegelt ist. Mit einem LED-Display hinter der Spiegelscheibe lässt sich so eine Anzeigefläche erschaffen, die für den Betrachter nur sichtbar ist, wenn sie beleuchtet ist. Die Art und Weiße, wie das Display angesprochen wird ist wieder eine freiere Entscheidung. Wir haben uns dafür entschieden einen RaspberryPi 3b zu verwenden. Dies hat mehrere Gründe, die im Laufe des Berichts noch genauer beleuchtet werden.Montiert wird das Spiegeldisplay in einem Rahmen aus Holz, um ein einheitliches Erscheinungsbild zu kreieren. Als letztes wichtiges Element ist noch der LeapMotion-Controller zu nennen, der eine einfache Möglichkeit bildet um die Gestik des Nutzers zu erkennen, um somit die Interaktion zwischen Mensch und Maschine zu ermöglichen.
 	
 	\subsubsection*{Grobe Kostenaufstellung}
 	\begin{tabularx}{0.95\textwidth}{|X|l|r|}
@@ -117,20 +117,7 @@
 		\textcolor{tumbleweed}{\textbf{Gesamt}}& & \textbf{ca. 525\euro}\\
 		\hline
 	\end{tabularx}
-	
-	\subsection*{Aufgabenaufteilung}
-	\begin{tabularx}{0.95\textwidth}{|l|X|}
-		\hline
-		Patrick Gruber & Erstellen der Kostenaufstellung\\
-		\hline
-		Tobias Gubo & \\
-		\hline
-		Michael Lazik & \\
-		\hline
-		Marcus Müller & \\
-		\hline
-	\end{tabularx}
-	
+
 	\newpage
 	
 	\section{Verstehen und Festlegen des Nutzungskontexts}
@@ -159,22 +146,6 @@
 	
 	Damit der Nutzungskontext aus Sicht der primären Benutzer verstanden ist, wurden Interviews mit den Probanden geführt.
 	Dabei wurden vor allem zu Beginn möglichst offene, neutrale und allgemeine Fragen gestellt, also das "Warum?", die dann immer mehr in die Materie des Smart Mirrors gingen, also das "Wie?". Hier konnten die Probanden aus ihre Vorstellung eines Smart Mirrors offenbaren und das Projektteam konnte anhand dieser Informationen die Nutzungsanforderungen festlegen. 
-	
-
-	
-	
-	\subsection*{Aufgabenaufteilung}
-	\begin{tabularx}{0.95\textwidth}{|l|X|}
-		\hline
-		Patrick Gruber & \\
-		\hline
-		Tobias Gubo & \\
-		\hline
-		Michael Lazik & \\
-		\hline
-		Marcus Müller & \\
-		\hline
-	\end{tabularx}
 	
 	\newpage
 	
@@ -286,12 +257,128 @@
 		\item RSS-Feed
 	\end{itemize}
 	
-	\subsection*{Aufgabenaufteilung}
+	\newpage
+	\section{Aufbau Software System}
+	\subsection{System}
+	Der grundlegende Aufbau der Software des Smart Mirrors besteht aus einem vue.js client und einem node.js Server. Dieses Konzept wurde so gewählt, da das Leap Motion SDK nur auf einem Windows Rechner oder Mac PC ausgeführt werden kann. Der Server wird dabei auf dem Gerät ausgeführt an dem der Leap Motion per USB verbunden ist, um dort die Gesten des Users erkennen zu können. Diese Gesten werden nun mittels Websockets an das vue.js Frontend übertragen. Die Frontend Website wird dabei auf dem Raspberry Pi, welcher im Spiegel verbaut ist, aufgerufen. Somit können die Eingaben die der node.js Server erkannt hat in echtzeit auf das, sich im Spiegel befindende Frontend, übertragen werden.
+	\subsection{Frontend}
+	Jede Seite wurde mit vue.js implementiert. Vue.js ist ein clientseitiges JavaScript Webframework, womit Single Page Applications und auch Multi-Page-Webseiten erstellt werden können. Dabei besteht jede Seite aus einer “Single File Component”, die in drei Bereichen unterteilt ist. 
+	\begin{description}
+		\item[Template Bereich] In diesem Bereich wird der HTML Code eingebunden, der zudem auch vue.js spezifische Inhalte enthalten kann um Elemente einzubinden.
+		\item[Script Bereich] Im Script Bereich wird die Logik mittels JavaScript oder TypeScript
+		implementiert. Zudem kann die root Instanz oder die bereits erstellten
+		Komponenten eingebunden werden.
+		\item[Style Bereich] Hier werden die CSS Elemente erstellt. Zudem ist es möglich SCSS, SASS
+		oder auch PostCSS zu verwenden.
+	\end{description}
+	Das besondere an vue.js ist auch, dass alles jeweils aus Komponenten besteht, die zusammenhängen. Das hat den erheblichen Vorteil, wartbaren Code zu implementieren und vor allem für eine gute Wiederverwendbarkeit zu sorgen. 
+	\subsection{Backend}
+	Der Server stellt primär eine Verbindung mit dem LeapMotion her. Ist diese hergestellt, wartet er auf einen sich verbindenden Clienten. Hat sich eine Verbindung zu dem Spiegel aufgebaut kann der LeapMotion damit beginen die Hände des Nutzers zu erkennen
+	Inter detektiert der Server über den LeapMotion in einstellbaren Raten die Position der Hände des Nutzers und speichert diese als SwipeObject zur weiteren Verarbeitung in eine Liste. Damit keine winzigen Bewegungen fehlerhaft erkannt werden, gibt es die Option über zwei Variablen bestimmte SwipeObjecte bezüglich ihrer Variable velocity zu filter und so eine leichte Rauschunterdrückung der detektierten Signale zu ermöglichen.
+	Nach diesen Schritten muss der Server nur noch differenzieren, welche Geste der Nutzer ausgeführt hat und diese an den Clienten übertragen, der daraufhin seinen Zustand anpasst und den enstprechenden Inhalt anzeigt. 
+	\subsubsection*{Gestenerkennung}
+	Zur Differenzierung der Gesten haben wir zwei verschiedene Methoden entwickelt und auch an Nutzern getestet, ob es merkbare Unterschiede zwischen den beiden gibt.
+	Die Algorithmen funkiernen einerseits auf einem zeitbasiertem und andererseits auf einem ortsbasiertem Entscheidungsmuster.
+	
+	\newpage
+	
+	\section{Evaluierung der Gestaltungslösung anhand der Nutzungsanforderung}
+	\subsection{Entwicklungsbegleitende Usability-Tests}
+	Während den verschiedenen Entwicklungsphasen wurden immer wieder Usability-Test erstellt und durchgeführt, um den aktuellen Entwicklungsstand zu validieren.
+	Dies begann damit, dass am Anfang allgemeine Fragebögen für die potentiellen User erstellt wurden, um ein erstes Gefühl für die 						Nutzungsanforderungen zu erlangen. Dieser war wie folgend aufgebaut:
+	\begin{description}
+		\item[Allgemeine Fragen] \hfill
+		 \begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item Zu welchen Zeiten stehst du am meisten vorm Spiegel?
+			\item Was sind die ersten 5 Fragen, die du dir in der Früh stellst?
+		\end{itemize}
+		\item[Erlebnis Fragen] \hfill
+		\begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item Zu welchen Zeiten stehst du am meisten vorm Spiegel?
+			\item Was sind die ersten 5 Fragen, die du dir in der Früh stellst?
+		\end{itemize}
+		\item[Spezifische Fragen] \hfill
+			\begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item Welche Apps, Webseiten verwendest du am Morgen?
+			\item Hast du schonmal einen Smart Mirror verwendet/gesehen?
+			\end{itemize}
+		\item[Erlebnis Fragen] \hfill
+			\begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item Stelle dir vor du hast einen Smart Mirror, wie sieht er aus? was machst du damit?\\
+			wie sieht der Smart Mirror 2050 aus?
+			\item Was willst du auf dem Smart Mirror machen können?
+			\item Was würdest du dir auf dem Smart Mirror alles anzeigen lassen wollen?
+			\end{itemize}
+	\end{description}
+	Nachdem damit das erste Bild über die Interessen des Nutzers entstanden ist, ging es weiter mit dem Prototyping. Nachdem erste Prototypen 				erstellt wurden, wurde wieder ein Testkonzept entworfen, mit dem der Entwickelte Prototyp validiert werden konnte. Dies sah wie folgend aus:
+	\subsubsection*{Testkonzept}
+	Dieser Test soll uns helfen, unseren Smart Mirror Prototypen zu verbessern und Probleme zu erkennen. Dir werden im folgenden mehrere Aufgaben 			gestellt, falls du einige davon nicht erledigen kannst, ist das nicht deine Schuld sondern zeigt uns, was am Prototyp noch zu verbessern ist. Zum 	Beispiel dass der Smart Mirror nicht so intuitiv und leicht bedienbar ist, wie wir es gerne hätten.\\
+	Es wäre uns eine große Hilfe, wenn du versuchst bei den Aufgaben laut zu denken, also deine Wahrnehmungen und Überlegungen zu schildern. So 			können wir einen besseren Einblick in die Benutzererfahrung erlangen.\\
+	Bitte versuche dich an folgenden Aufgaben in dieser Reihenfolge:\\
+	\begin{itemize}
+		\setlength{\itemsep}{-0.5em}
+		\item Was siehst du hier?
+		\item Versuche den Spiegel zu bedienen
+		\item rufe die Termin Übersicht auf
+		\item navigiere zur ÖPNV  Übersicht
+		\item mache dich mit den verschiedenen Seiten vertraut
+		\item navigiere zurück zur Terminübersicht
+		\item navigiere zum Mensaplan
+		\item navigiere zur ÖPNV  Übersicht
+		\item finde heraus, was heute für dich das günstigste Gericht in der Mensa ist
+		\item Offener Teil/Fragen nach der Meinung des Users
+	\end{itemize}
+	
+	\subsection{QuantitativeEvaluierungen}
+	Die Evaluierung dient der Feststellung der Erfüllung der Nutzungsanforderungen. Zur Durchführung der Evaluierung wurde am 06.01.2021 ein Konzept entworfen. Ein einseitiges Dokument wurde erstellt, dass dem Probanden vorgelegt werden kann und ihn bei der Durchführung des Tests leitet. Neben allgemeinen Informationen zum Projekt und zum Usability-Test enthält Aufgaben, die der Proband am Smart Mirror durchführen soll. Nachdem der Proband sich an allen Aufgaben versucht hat, sollen in einem offenen Gespräch weitere Informationen gewonnen werden. Jedes der Teammitglieder führte im Laufe der folgenden Wochen je 2 Evaluierungen mit Bekannten durch.\\
+	Die Aufgaben sind so gestellt, dass der Proband mehrfach zwischen Screens wechseln muss. Aus den Screens soll der Proband verschiedene Informationen auslesen. Der Fokus der Quantitativen Evaluierung lag auf folgenden Fragen:\\
+	\begin{tabularx}{0.95\textwidth}{|X|X|}
+		\hline
+		\textcolor{tumbleweed}{\underline{\textbf{Frage}}} & \textcolor{tumbleweed}{\underline{\textbf{Antwort}}}\\
+		\hline
+	\end{tabularx}
+	
+	
+	
+	
+	
+	\section{Arbeitsaufteilung}
+	\subsection*{Planen des menschzentrierten Gestaltungsprozesses}
+	\begin{tabularx}{0.95\textwidth}{|l|X|}
+		\hline
+		Patrick Gruber & Erstellen der Kostenaufstellung\\
+		\hline
+		Tobias Gubo & \\
+		\hline
+		Michael Lazik & \\
+		\hline
+		Marcus Müller & \\
+		\hline
+	\end{tabularx}
+	
+	\subsection*{Verstehen und Festlegen des Nutzungskontexts}
+	\begin{tabularx}{0.95\textwidth}{|l|X|}
+		\hline
+		Patrick Gruber & \\
+		\hline
+		Tobias Gubo & \\
+		\hline
+		Michael Lazik & \\
+		\hline
+		Marcus Müller & \\
+		\hline
+	\end{tabularx}
+
+	\subsection*{Erarbeitung von Gestaltungslösungen zur Erfüllung des Nutzungskontexts}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
 		Patrick Gruber & 
 		\begin{itemize}
-			\setlength{\itemsep}{-0.5em}
+			\setlength{\itemsep}{-0.6em}
 			\item  Validierung der Interaktionsmöglichkeiten
 			\item  Entwurf der Navigations zwischen den Seiten
 			\item Erstellen des Trello-Boards
@@ -302,7 +389,7 @@
 		\end{itemize}\\
 		\hline
 		Tobias Gubo & \begin{itemize}
-			\setlength{\itemsep}{-0.5em}
+			\setlength{\itemsep}{-0.6em}
 			\item  Validierung der Interaktionsmöglichkeiten
 			\item  Entwurf der Navigations zwischen den Seiten
 			\item Erstellen des Trello-Boards
@@ -315,7 +402,7 @@
 		\end{itemize} \\
 		\hline
 		Michael Lazik &  \begin{itemize}
-			\setlength{\itemsep}{-0.5em}
+			\setlength{\itemsep}{-0.6em}
 			\item  Validierung der Interaktionsmöglichkeiten
 			\item  Entwurf der Navigations zwischen den Seiten
 			\item Erstellen des Trello-Boards
@@ -326,7 +413,7 @@
 		\end{itemize}\\
 		\hline
 		Marcus Müller &  \begin{itemize}
-			\setlength{\itemsep}{-0.5em}
+			\setlength{\itemsep}{-0.6em}
 			\item  Validierung der Interaktionsmöglichkeiten
 			\item  Entwurf der Navigations zwischen den Seiten
 			\item Erstellen des Trello-Boards
@@ -336,15 +423,8 @@
 		\end{itemize}\\
 		\hline
 	\end{tabularx}
-	
-	\newpage
-	
-	\section{Aufbau Software System}
-	\subsection{System}
-	\subsection{Frontend}
-	\subsection{Backend}
-	
-	\subsection*{Aufgabenaufteilung}
+
+	\subsection*{Aufbau Software System}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
 		Patrick Gruber & \\
@@ -356,17 +436,8 @@
 		Marcus Müller & \\
 		\hline
 	\end{tabularx}
-	
-	\newpage
-	
-	\section{Evaluierung der Gestaltungslösung anhand der Nutzungsanforderung}
-	\blindtext[2]
-	\subsection{Entwicklungsbegleitende Usability-Tests}
-	\blindtext[1]
-	\subsection{QuantitativeEvaluierungen}
-	
-	
-	\subsection*{Aufgabenaufteilung}
+
+	\subsection*{Evaluierung der Gestaltungslösung anhand der Nutzungsanforderung}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
 		Patrick Gruber & \\
@@ -378,7 +449,5 @@
 		Marcus Müller & \\
 		\hline
 	\end{tabularx}
-	
-	
 	
 \end{document}
