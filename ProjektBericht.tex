@@ -95,8 +95,7 @@
 	\end{quote}
 	Wie jedes gute Projekt beginnt man mit der grundlegenden Planung und Strukturierung 
 	\subsection{Festlegen der Resourcen}
-	Der erste und elemetarste Schritt war es sich zu überlegen, wie ein Produkt wie der Smart Mirror überhaupt realisiert werden kann. Dafür haben wir uns im Internet auf die Suche gemacht und sind dort an mehreren Stellen auf DIY-Projekte gestoßen, die eine ähnliche Idee umgesetzt haben. Die fundamentalen Bestandteile waren jedoch oft sehr vergleichbar. Man benötigt einen Einwegspiegel, der das Licht von einer Seite durchlässt und von der anderen Seite verspiegelt ist. Mit einem LED-Display hinter der Spiegelscheibe lässt sich so eine Anzeigefläche erschaffen, die für den Betrachter nur sichtbar ist, wenn sie beleuchtet ist. Die Art und Weiße, wie das Display angesprochen wird ist wieder eine freiere Entscheidung. Wir haben uns dafür entschieden einen RaspberryPi 3b zu verwenden. Dies hat mehrere Gründe, die im Laufe des Berichts noch genauer beleuchtet werden.Montiert wird das Spiegeldisplay in einem Rahmen aus Holz, um ein einheitliches Erscheinungsbild zu kreieren. Als letztes wichtiges Element ist noch der LeapMotion-Controller zu nennen, der eine einfache Möglichkeit bildet um die Gestik des Nutzers zu erkennen, um somit die Interaktion zwischen Mensch und Maschine zu ermöglichen.
-	
+	Der erste und elementarste Schritt war es sich zu überlegen, wie ein Produkt wie der Smart Mirror überhaupt realisiert werden kann. Dafür haben wir uns im Internet auf die Suche gemacht und sind dort an mehreren Stellen auf DIY-Projekte gestoßen, die eine ähnliche Idee umgesetzt haben. Die fundamentalen Bestandteile waren jedoch oft sehr vergleichbar. Man benötigt einen Einwegspiegel, der das Licht von einer Seite durchlässt und von der anderen Seite verspiegelt ist. Mit einem LED-Display hinter der Spiegelscheibe lässt sich so eine Anzeigefläche erschaffen, die für den Betrachter nur sichtbar ist, wenn sie beleuchtet ist. Die Art und Weise, wie das Display angesprochen wird ist wieder eine freiere Entscheidung. Wir haben uns dafür entschieden einen RaspberryPi 3b zu verwenden. Dies hat mehrere Gründe, die im Laufe des Berichts noch genauer beleuchtet werden. Montiert wird das Spiegeldisplay in einem Rahmen aus Holz, um ein einheitliches Erscheinungsbild zu kreieren. Als letztes wichtiges Element ist noch der LeapMotion-Controller zu nennen, der eine einfache Möglichkeit bildet, um die Gestik des Nutzers zu erkennen, um somit die Interaktion zwischen Mensch und Maschine zu ermöglichen.
 	\subsubsection*{Grobe Kostenaufstellung}
 	\begin{tabularx}{0.95\textwidth}{|X|l|r|}
 		\hline
@@ -121,19 +120,19 @@
 	\newpage
 	
 	\section{Verstehen und Festlegen des Nutzungskontexts}
-	Nachdem die Ressourcen festgelegt worden sind, musste der Nutzungskontext definiert, verstanden und festgelegt werden. Hierbei wurde überlegt, wer die Benutzer sind und wie die Benutzer mit dem Smart Mirror interagieren werden.
+	Nachdem die Ressourcen festgelegt worden sind, musste der Nutzungskontext definiert, verstanden und festgelegt werden. Hierbei wurde überlegt, wer die Benutzer sind und wie diese mit dem Smart Mirror interagieren werden.
 	\subsection{Beschreibung des Nutzungskontexts}
-	Unsere Primären (Direkten) Benutzer sind die Probanden, die unser Smart Mirror testen und Fazite daraus ziehen.\\
-	Die Sekundären (Indirekten) Benutzer sind die Mitglieder des Projektteams, die aus den Fazite den Smart Mirror weiter entwickeln.\\
-	Mit dem Smart Mirror sollen den Benutzern innerhalb kürzester Zeit die wichtigsten Informationen am Spiegel gezeigt werden.\\
-	Dabei sollen dem Benutzer gezeigt werden:
+	Unsere primären Benutzer sind die Probanden, die den Smart Mirror testen und damit Daten zur Auswertung liefern.\\
+	Die sekundären Benutzer sind die Mitglieder des Projektteams, die auf Basis der gewonnen Daten den Smart Mirror weiter entwickeln.\\
+	Mit dem Smart Mirror sollen den Benutzern innerhalb kürzester Zeit die wichtigsten Informationen gezeigt bekommen.\\
+	Dabei soll dem Benutzer gezeigt werden:
 	\begin{itemize}
 		\setlength\itemsep{-0.5em}
 		\item Uhrzeit
 		\item Wetter (Uhrzeitbedingt)
 		\item RSS-Feed
 	\end{itemize}
-	Zudem kann der Benutzer seine individuellen Informationen anzeigen lassen. In unserem Projekt sind das:
+	Zudem kann der Benutzer individuelle Informationen anzeigen lassen. In unserem Projekt sind das:
 	\begin{itemize}
 		\setlength\itemsep{-0.5em}
 		\item Termine
@@ -143,16 +142,15 @@
 		\item Speißeplan
 	\end{itemize}
 	Für den Smart Mirror benötigt der Nutzer keine Ausrüstung. Sie müssen nur wissen, wie man mit dem Smart Mirror interagiert und wie man durch den Pageflow die Seiten wechselt. Der Smart Mirror kann an jeden von den Benutzern beliebig ausgewählten Ort stehen. Das Projektteam hat sich jedoch auf das Schlafzimmer als Örtlichkeit für den Smart Mirror festgelegt.\\
-	
-	Damit der Nutzungskontext aus Sicht der primären Benutzer verstanden ist, wurden Interviews mit den Probanden geführt.
-	Dabei wurden vor allem zu Beginn möglichst offene, neutrale und allgemeine Fragen gestellt, also das "Warum?", die dann immer mehr in die Materie des Smart Mirrors gingen, also das "Wie?". Hier konnten die Probanden aus ihre Vorstellung eines Smart Mirrors offenbaren und das Projektteam konnte anhand dieser Informationen die Nutzungsanforderungen festlegen. 
+	Damit der Nutzungskontext aus Sicht der primären Benutzer verstanden werden kann, wurden Interviews mit den Probanden durchgeführt.
+	Dabei wurden vor allem zu Beginn möglichst offene, neutrale und allgemeine Fragen gestellt, also das "Warum?", die dann immer mehr in die Materie des Smart Mirrors gingen, also das "Wie?". Hier konnten die Probanden uns ihre Vorstellung eines Smart Mirrors offenbaren und das Projektteam konnte anhand dieser Informationen die Nutzungsanforderungen festlegen. 
 	
 	\newpage
 	
 	\section{Erarbeitung von Gestaltungslösungen zur Erfüllung des Nutzungskontexts}
 	\subsection{Erstellen der Interaktionsspezifikation}
 	Anhand der zuvor, durch Umfragen und Formulare erlangten Informationen über das potentielle Nutzungsverhaltens der User, wurden nun die möglichen Varianten der Interaktion mit dem Spiegel validiert.\\
-	Dabei standen Folgende Optionen zur Verfügung:
+	Dabei wurden folgende Optionen betrachtet:
 	\begin{itemize}
 		\setlength\itemsep{-0.5em}
 		\item Toucheingabe
@@ -160,20 +158,21 @@
 		\item Gestensteuerung
 	\end{itemize}
 	Hierbei stellte sich heraus, dass die Sprachsteuerung oftmals von den Nutzern als negativ empfunden wurde, da hier das Gefühl entsteht, dass der Spiegel alles mithört was in der nähe davon gesprochen wird. Die Toucheingabe wurde ausgeschlossen, da hier einfach das Problem besteht, dass der Spiegel durch die Fingerabdrücke verschmutzt wird, sodass häufiges reinigen notwendig wäre.\\
-	Letztendlich fiel die Wahl nun auf die Gestensteuerung, da hier die Umfragen aufzeigen, dass Gesten für viele Nutzer eine intuitive Möglichkeit darstellt, einen Spiegel zu bedienen.\\
-	Daraufhin wurde noch validiert welche konkreten Gesten für den Nutzer am einfachsten zu benutzen waren. Diese Entscheidung geht Hand in Hand mit Punkt “4.2 Erstellen der Informationsarchitektur” da das Layout der Informationen eine maßgebliche Rolle für die Art wie darauf Navigiert werden muss, spielt.\\
+	Letztendlich fiel die Wahl nun auf die Gestensteuerung, da hier die Interviews aufzeigten, dass Gesten für viele Nutzer eine intuitive Möglichkeit darstellen, einen Spiegel zu bedienen.\\
+	Daraufhin wurde noch validiert welche konkreten Gesten für den Nutzer am einfachsten zu benutzen waren. Diese Entscheidung geht Hand in Hand mit Punkt “3.2 Erstellen der Informationsarchitektur” da das Layout der Informationen eine maßgebliche Rolle für die Art, wie darauf Navigiert werden muss, spielt.\\
 	Dabei wurde das folgende Konzept herausgearbeitet:
 	\begin{figure}[h!] 
 		\centering
 		\includegraphics[width=0.4\textwidth]{img/Zustandsdiagramm.png}
 		\captionsetup{labelformat=empty}
-		\caption{Zustandsdiagramm des Systems}
+		\caption{Zustandsdiagramm des Systems\\
+		L2R - Left To Right Swipe, R2L - Right To Left Swipe}
 	\end{figure}\\
 	Auf diesem Bild ist zu sehen wie die 5 unterschiedlichen Seiten des Spiegels mittels den Gesten swipe Links nach Rechts oder swipe Rechts nach Links erreicht werden können.
 	Diese beiden Gesten stellten für die grundsätzliche Bedienung die schönste Möglichkeit dar, den Spiegel zu bedienen. Zusätzlich können die Bewegungen swipe Hoch und swipe Runter für erweiterte Funktionalitäten wie Bildschirmhelligkeit oder Ähnliches genutzt werden.
 	
 	\subsection{Erstellen der Informationsarchitektur}
-	Begonnen wurde die gestaltung der Informationsarchitektur mittels eines \href{https://trello.com/b/hdf8bWp2/sippin-on-my-lean-ux}{Trello-Boards}. Dabei wurden erst auf basis von Nutzer Feedback eine Sammlung an intressanten Features erstellt. Daraufhin wurde mittels \href{https://www.optimalworkshop.com/optimalsort/}{Optimal Workshop} und Card Sorting analysiert wie Nutzer Informationen und Features gruppieren würden. Das gab ein klares Bild über die Struktur der Informationen am Spiegel.
+	Begonnen wurde die Gestaltung der Informationsarchitektur mittels eines \href{https://trello.com/b/hdf8bWp2/sippin-on-my-lean-ux}{Trello-Boards}. Dabei wurden erst auf basis von Nutzer Feedback eine Sammlung an intressanten Features erstellt. Daraufhin wurde mittels \href{https://www.optimalworkshop.com/optimalsort/}{Optimal Workshop} und Card Sorting analysiert wie Nutzer Informationen und Features gruppieren würden. Das gab ein klares Bild über die Struktur der Informationen am Spiegel.
 	\begin{figure}[h!]
 		\centering
 		\includegraphics[width=\textwidth]{img/IA.png}
@@ -243,19 +242,13 @@
 	\end{figure}
 
 	\subsection{Prototyping}
-	Der Prototyp wurde mittels dem Frontend Framework vue.js und node.js als Backend entwickelt. Dabei wurden die einzelnen Seiten auf basis von den Powerpoint Designs in html Nachprogrammiert. Zur Steuerung des Spiegels wurde ein Leap Motion Sensor mittels des bereitgestellten JS SDKs in den node Server integriert. Darin wurde Gestenerkennung implementiert. Die erkannten gesten werden nun mittels Web Sockets an das vue.js Frontend gesendet. Hier wurden die Gesten nun zur Navigation des UIs verwendet.\\
+	Der Prototyp wurde mittels dem Frontend Framework vue.js und node.js als Backend entwickelt. Dabei wurden die einzelnen Seiten auf Basis der Powerpoint Designs in html Nachprogrammiert. Zur Steuerung des Spiegels wurde ein Leap Motion Sensor mittels des bereitgestellten JS SDKs in den node Server integriert. Darin wurde Gestenerkennung implementiert. Die erkannten gesten werden nun mittels Web Sockets an das vue.js Frontend gesendet. Hier wurden die Gesten nun zur Navigation des UIs verwendet.\\
 	Aus Usability zwecken wurden zwei Varianten des Gestenerkennungs-Algorithmuses erstellt. Eine Version die die Gesten nach einer bestimmten Distanz auslöst (also mehrfach swipe mit einer Handbewegung möglich) und eine die bei einer Bewegung nur eine Geste erkennt. Nach User Testing stellte sich heraus, dass die zweite Variante deutlich intuitiver für den User ist, da diese immer versuchen, wie am Smartphone, durchgängige Wischgesten zu tätigen.\\
 	Am Schluss wurde ein Konzept zur Durchführung von Usability Tests erstellt. Das erstellte Dokument enthält eine kurze Vorstellung des Projektes, Hinweise zum Usability Testing und Aufgaben, die der Teilnehmer am Spiegel durchführen soll. Die Aufgaben behandeln das Navigieren zwischen den Seiten und das Herauslesen von Informationen. Nach Durchführung des Tests sollen in einem offenen Gespräch zusätzliche Informationen gewonnen werden.
 	
 	
 	\subsection{UI Gestaltungsrichtlinien}
-	Um für ein vereinheitlichtes Design zu sorgen, wurde immer die gleiche Schriftart und die gleiche Hintergrundfarbe verwendet. Um Inkonsistenzen zu vermeiden, wurden Komponenten, die auf mehreren Seiten auf die gleiche Art und Weise dargestellt werden, als Fragment in die Seiten eingebunden. Das wären unter anderem diese Komponenten:
-	\begin{itemize}
-		\setlength{\itemsep}{-0.5em}
-		\item Uhrzeit
-		\item Wetter
-		\item RSS-Feed
-	\end{itemize}
+	Um für ein vereinheitlichtes Design zu sorgen, wurde immer die gleiche Schriftart und die gleiche Hintergrundfarbe verwendet. Um Inkonsistenzen zu vermeiden, wurden Komponenten, die auf mehreren Seiten auf die gleiche Art und Weise dargestellt werden, als Fragment in die Seiten eingebunden. Das wären unter anderem diese Komponenten: Uhrzeit, Wetter, RSS-Feed
 	
 	\newpage
 	\section{Aufbau Software System}
@@ -305,7 +298,7 @@
 			\item Welche Apps, Webseiten verwendest du am Morgen?
 			\item Hast du schonmal einen Smart Mirror verwendet/gesehen?
 			\end{itemize}
-		\item[Erlebnis Fragen] \hfill
+		\item[Wunsch Fragen] \hfill
 			\begin{itemize}
 			\setlength{\itemsep}{-0.5em}
 			\item Stelle dir vor du hast einen Smart Mirror, wie sieht er aus? was machst du damit?\\
@@ -314,26 +307,32 @@
 			\item Was würdest du dir auf dem Smart Mirror alles anzeigen lassen wollen?
 			\end{itemize}
 	\end{description}
-	Nachdem damit das erste Bild über die Interessen des Nutzers entstanden ist, ging es weiter mit dem Prototyping. Nachdem erste Prototypen 				erstellt wurden, wurde wieder ein Testkonzept entworfen, mit dem der Entwickelte Prototyp validiert werden konnte. Dies sah wie folgend aus:
-	\subsubsection*{Testkonzept}
-	Dieser Test soll uns helfen, unseren Smart Mirror Prototypen zu verbessern und Probleme zu erkennen. Dir werden im folgenden mehrere Aufgaben 			gestellt, falls du einige davon nicht erledigen kannst, ist das nicht deine Schuld sondern zeigt uns, was am Prototyp noch zu verbessern ist. Zum 	Beispiel dass der Smart Mirror nicht so intuitiv und leicht bedienbar ist, wie wir es gerne hätten.\\
-	Es wäre uns eine große Hilfe, wenn du versuchst bei den Aufgaben laut zu denken, also deine Wahrnehmungen und Überlegungen zu schildern. So 			können wir einen besseren Einblick in die Benutzererfahrung erlangen.\\
-	Bitte versuche dich an folgenden Aufgaben in dieser Reihenfolge:\\
-	\begin{itemize}
-		\setlength{\itemsep}{-0.5em}
-		\item Was siehst du hier?
-		\item Versuche den Spiegel zu bedienen
-		\item rufe die Termin Übersicht auf
-		\item navigiere zur ÖPNV  Übersicht
-		\item mache dich mit den verschiedenen Seiten vertraut
-		\item navigiere zurück zur Terminübersicht
-		\item navigiere zum Mensaplan
-		\item navigiere zur ÖPNV  Übersicht
-		\item finde heraus, was heute für dich das günstigste Gericht in der Mensa ist
-		\item Offener Teil/Fragen nach der Meinung des Users
-	\end{itemize}
+	Nachdem damit das erste Bild über die Interessen des Nutzers entstanden ist, ging es weiter mit dem Prototyping. Nachdem erste Prototypen 				erstellt wurden, wurde wieder ein Testkonzept entworfen, mit dem der entwickelte Prototyp validiert werden konnte. Dies sah wie folgend aus:
+	\newpage
+	\begin{center}
+	\fbox{
+		\begin{minipage}{0.85\textwidth}
+			\subsubsection*{Smart Mirror Usability Test}
+			Dieser Test soll uns helfen, unseren Smart Mirror Prototypen zu verbessern und Probleme zu erkennen. Dir werden im folgenden mehrere Aufgaben 			gestellt, falls du einige davon nicht erledigen kannst, ist das nicht deine Schuld sondern zeigt uns, was am Prototyp noch zu verbessern ist. Zum 	Beispiel dass der Smart Mirror nicht so intuitiv und leicht bedienbar ist, wie wir es gerne hätten.\\
+			Es wäre uns eine große Hilfe, wenn du versuchst bei den Aufgaben laut zu denken, also deine Wahrnehmungen und Überlegungen zu schildern. So 			können wir einen besseren Einblick in die Benutzererfahrung erlangen.\\
+			Bitte versuche dich an folgenden Aufgaben in dieser Reihenfolge:
+			\begin{itemize}
+				\setlength{\itemsep}{-0.5em}
+				\item Was siehst du hier?
+				\item Versuche den Spiegel zu bedienen
+				\item rufe die Termin Übersicht auf
+				\item navigiere zur ÖPNV  Übersicht
+				\item mache dich mit den verschiedenen Seiten vertraut
+				\item navigiere zurück zur Terminübersicht
+				\item navigiere zum Mensaplan
+				\item navigiere zur ÖPNV  Übersicht
+				\item finde heraus, was heute für dich das günstigste Gericht in der Mensa ist
+				\item Offener Teil/Fragen nach der Meinung des Users
+			\end{itemize}
+	\end{minipage}}
+\end{center}
 	
-	\subsection{QuantitativeEvaluierungen}
+	\subsection{Evaluierungen}
 	Die Evaluierung dient der Feststellung der Erfüllung der Nutzungsanforderungen. Zur Durchführung der Evaluierung wurde am 06.01.2021 ein Konzept entworfen. Ein einseitiges Dokument wurde erstellt, dass dem Probanden vorgelegt werden kann und ihn bei der Durchführung des Tests leitet. Neben allgemeinen Informationen zum Projekt und zum Usability-Test enthält Aufgaben, die der Proband am Smart Mirror durchführen soll. Nachdem der Proband sich an allen Aufgaben versucht hat, sollen in einem offenen Gespräch weitere Informationen gewonnen werden. Jedes der Teammitglieder führte im Laufe der folgenden Wochen je 2 Evaluierungen mit Bekannten durch.\\
 	Die Aufgaben sind so gestellt, dass der Proband mehrfach zwischen Screens wechseln muss. Aus den Screens soll der Proband verschiedene Informationen auslesen. Der Fokus der Quantitativen Evaluierung lag auf folgenden Fragen:\\
 	\begin{tabularx}{0.95\textwidth}{|X|X|}
@@ -352,10 +351,8 @@
 		Gibt es Probleme beim Verständnis der gezeigten Inhalte? & Alle User konnten die gezeigten Inhalte versehen\\
 		\hline
 	\end{tabularx}
-	
-	
-	
-	
+		
+	\newpage
 	
 	\section{Arbeitsaufteilung}
 	\subsection*{Projektplanung}
