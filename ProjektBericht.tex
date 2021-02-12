@@ -12,6 +12,8 @@
 
 \usepackage{tabularx}
 \usepackage{eurosym}
+\usepackage{caption}
+\usepackage{subcaption}
 
 
 \usepackage{fancyhdr}
@@ -43,7 +45,7 @@
 	colorlinks,
 	linkcolor=sinopia,
 	citecolor={blue!50!black},
-	urlcolor={blue!80!black}
+	urlcolor={sinopia!80!black}
 }
 
 %editig section and subsection style
@@ -208,28 +210,161 @@
 	\newpage
 	
 	\section{Erarbeitung von Gestaltungslösungen zur Erfüllung des Nutzungskontexts}
-	\blindtext[2]
 	\subsection{Erstellen der Interaktionsspezifikation}
-	\blindtext[1]
+	Anhand der zuvor, durch Umfragen und Formulare erlangten Informationen über das potentielle Nutzungsverhaltens der User, wurden nun die möglichen Varianten der Interaktion mit dem Spiegel validiert.\\
+	Dabei standen Folgende Optionen zur Verfügung:
+	\begin{itemize}
+		\setlength\itemsep{-0.5em}
+		\item Toucheingabe
+		\item Sprachsteuerung
+		\item Gestensteuerung
+	\end{itemize}
+	Hierbei stellte sich heraus, dass die Sprachsteuerung oftmals von den Nutzern als negativ empfunden wurde, da hier das Gefühl entsteht, dass der Spiegel alles mithört was in der nähe davon gesprochen wird. Die Toucheingabe wurde ausgeschlossen, da hier einfach das Problem besteht, dass der Spiegel durch die Fingerabdrücke verschmutzt wird, sodass häufiges reinigen notwendig wäre.\\
+	Letztendlich fiel die Wahl nun auf die Gestensteuerung, da hier die Umfragen aufzeigen, dass Gesten für viele Nutzer eine intuitive Möglichkeit darstellt, einen Spiegel zu bedienen.\\
+	Daraufhin wurde noch validiert welche konkreten Gesten für den Nutzer am einfachsten zu benutzen waren. Diese Entscheidung geht Hand in Hand mit Punkt “4.2 Erstellen der Informationsarchitektur” da das Layout der Informationen eine maßgebliche Rolle für die Art wie darauf Navigiert werden muss, spielt.\\
+	Dabei wurde das folgende Konzept herausgearbeitet:
+	\begin{figure}[h!] 
+		\centering
+		\includegraphics[width=0.4\textwidth]{img/Zustandsdiagramm.png}
+		\captionsetup{labelformat=empty}
+		\caption{Zustandsdiagramm des Systems}
+	\end{figure}\\
+	Auf diesem Bild ist zu sehen wie die 5 unterschiedlichen Seiten des Spiegels mittels den Gesten swipe Links nach Rechts oder swipe Rechts nach Links erreicht werden können.
+	Diese beiden Gesten stellten für die grundsätzliche Bedienung die schönste Möglichkeit dar, den Spiegel zu bedienen. Zusätzlich können die Bewegungen swipe Hoch und swipe Runter für erweiterte Funktionalitäten wie Bildschirmhelligkeit oder Ähnliches genutzt werden.
+	
 	\subsection{Erstellen der Informationsarchitektur}
-	\blindtext[1]
+	Begonnen wurde die gestaltung der Informationsarchitektur mittels eines \href{https://trello.com/b/hdf8bWp2/sippin-on-my-lean-ux}{Trello-Boards}. Dabei wurden erst auf basis von Nutzer Feedback eine Sammlung an intressanten Features erstellt. Daraufhin wurde mittels \href{https://www.optimalworkshop.com/optimalsort/}{Optimal Workshop} und Card Sorting analysiert wie Nutzer Informationen und Features gruppieren würden. Das gab ein klares Bild über die Struktur der Informationen am Spiegel.
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width=\textwidth]{img/IA.png}
+		\captionsetup{labelformat=empty}
+		\caption{Informationarchitecture}
+	\end{figure}
+	\newpage
+	Nachdem die Gruppen festgelegt wurden, zeichnete sich ein klares Bild ab, welche Features wie am Spiegel angezeigt werden solle:
+	\begin{itemize}
+		\item HomeScreen
+		\begin{itemize}
+			\item Uhrzeit
+			\item Datum
+		\end{itemize}
+	\item Termine \& ToDo
+	\begin{itemize}
+		\item Termine für heute
+		\item ToDo-Liste für heute
+	\end{itemize}
+	\item  ÖPNV
+	\begin{itemize}
+		\item Die Abfahrtszeiten vom aktuellen Standort zu einem festlegbaren Ort
+	\end{itemize}
+	\item  Verkehrslage
+	\begin{itemize}
+		\item Der aktuelle Weg zur Arbeit samt Stauinformation
+	\end{itemize}
+	\item Speißeplan
+	\begin{itemize}
+		\item Die Gerichte des heutige Tages
+	\end{itemize}
+	\end{itemize}
+	
+	
 	\subsection{Spezifikation des UI}
-	\blindtext[1]
+	Die Entwicklung der UI begann mit Paper Prototyping. Hierbei wurden die ersten ersten Entwürfe auf basis der im vorherigen Schritt erstellten Informationsarchitektur erstellt.
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width = 0.3\textwidth]{img/paperSketching.jpg}
+		\captionsetup{labelformat=empty}
+		\caption{Paper sketching}
+	\end{figure}\\
+	Danach ging es weiter mit dem Design der unterschiedlichen Seiten mittels Powerpoint. Hier wurden konkrete Designs mit den verschiedensten UI Elementen ausgearbeitet.
+	
+	\begin{figure}[h!]
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[width = 0.8\linewidth]{img/standby.png}
+		\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+	\centering
+	\includegraphics[width = 0.8\linewidth]{img/TermineToDo.png}
+	\end{subfigure}
+	\end{figure}	\begin{figure}[h!]
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width = 0.8\linewidth]{img/Arbeitsweg.png}
+	\end{subfigure}
+	\begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width = 0.8\linewidth]{img/bus.png}
+	\end{subfigure}
+	\end{figure}	
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[width = 0.4\linewidth]{img/mensa.png}
+	\end{figure}
+
 	\subsection{Prototyping}
-	\blindtext[1]
+	Der Prototyp wurde mittels dem Frontend Framework vue.js und node.js als Backend entwickelt. Dabei wurden die einzelnen Seiten auf basis von den Powerpoint Designs in html Nachprogrammiert. Zur Steuerung des Spiegels wurde ein Leap Motion Sensor mittels des bereitgestellten JS SDKs in den node Server integriert. Darin wurde Gestenerkennung implementiert. Die erkannten gesten werden nun mittels Web Sockets an das vue.js Frontend gesendet. Hier wurden die Gesten nun zur Navigation des UIs verwendet.\\
+	Aus Usability zwecken wurden zwei Varianten des Gestenerkennungs-Algorithmuses erstellt. Eine Version die die Gesten nach einer bestimmten Distanz auslöst (also mehrfach swipe mit einer Handbewegung möglich) und eine die bei einer Bewegung nur eine Geste erkennt. Nach User Testing stellte sich heraus, dass die zweite Variante deutlich intuitiver für den User ist, da diese immer versuchen, wie am Smartphone, durchgängige Wischgesten zu tätigen.\\
+	Am Schluss wurde ein Konzept zur Durchführung von Usability Tests erstellt. Das erstellte Dokument enthält eine kurze Vorstellung des Projektes, Hinweise zum Usability Testing und Aufgaben, die der Teilnehmer am Spiegel durchführen soll. Die Aufgaben behandeln das Navigieren zwischen den Seiten und das Herauslesen von Informationen. Nach Durchführung des Tests sollen in einem offenen Gespräch zusätzliche Informationen gewonnen werden.
+	
+	
 	\subsection{UI Gestaltungsrichtlinien}
-	\blindtext[1]
+	Um für ein vereinheitlichtes Design zu sorgen, wurde immer die gleiche Schriftart und die gleiche Hintergrundfarbe verwendet. Um Inkonsistenzen zu vermeiden, wurden Komponenten, die auf mehreren Seiten auf die gleiche Art und Weise dargestellt werden, als Fragment in die Seiten eingebunden. Das wären unter anderem diese Komponenten:
+	\begin{itemize}
+		\setlength{\itemsep}{-0.5em}
+		\item Uhrzeit
+		\item Wetter
+		\item RSS-Feed
+	\end{itemize}
 	
 	\subsection*{Aufgabenaufteilung}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
-		Patrick Gruber & \\
+		Patrick Gruber & 
+		\begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item  Validierung der Interaktionsmöglichkeiten
+			\item  Entwurf der Navigations zwischen den Seiten
+			\item Erstellen des Trello-Boards
+			\item Durchführen des Card-Sortings
+			\item Paper Prototyping
+			\item Implementierung der Gestenerkennung
+			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
+		\end{itemize}\\
 		\hline
-		Tobias Gubo & \\
+		Tobias Gubo & \begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item  Validierung der Interaktionsmöglichkeiten
+			\item  Entwurf der Navigations zwischen den Seiten
+			\item Erstellen des Trello-Boards
+			\item Durchführen des Card-Sortings
+			\item Paper Prototyping
+			\item Prototyping Setup vo vue.JS und node.JS einrichten
+			\item Implemetierung der Socket Kommunikation
+			\item Implemetierung der Gestenerkennung
+			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
+		\end{itemize} \\
 		\hline
-		Michael Lazik & \\
+		Michael Lazik &  \begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item  Validierung der Interaktionsmöglichkeiten
+			\item  Entwurf der Navigations zwischen den Seiten
+			\item Erstellen des Trello-Boards
+			\item Durchführen des Card-Sortings
+			\item Paper Prototyping
+			\item Implementierung der Spiegel UI mittels vue.JS
+			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
+		\end{itemize}\\
 		\hline
-		Marcus Müller & \\
+		Marcus Müller &  \begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item  Validierung der Interaktionsmöglichkeiten
+			\item  Entwurf der Navigations zwischen den Seiten
+			\item Erstellen des Trello-Boards
+			\item Durchführen des Card-Sortings
+			\item Paper Prototyping
+			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
+		\end{itemize}\\
 		\hline
 	\end{tabularx}
 	
