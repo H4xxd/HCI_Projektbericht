@@ -89,7 +89,7 @@
 	\pagebreak
 	\setcounter{page}{1}
 	
-	\section{Planen des menschzentrierten Gestaltungsprozesses}
+	\section{Projektplanung}
 	\begin{quote}
 		{Nur wer sein Ziel kennt, findet den Weg.} - Laozi
 	\end{quote}
@@ -340,6 +340,17 @@
 		\hline
 		\textcolor{tumbleweed}{\underline{\textbf{Frage}}} & \textcolor{tumbleweed}{\underline{\textbf{Antwort}}}\\
 		\hline
+		Wie schnell kann ein User entdecken, dass durch Swipen die Ansicht gewechselt werden kann? & 2 von 8 Probanden benötigten nach 3 min weitere Hinweise. Die übrigen benötigten durchschnittlich 40 Sekunden.\\
+		\hline
+		Wie zuverlässig funktioniert die Gestenerkennung?&Nach einer kurzen Eingewöhnungsphase von ca. 3-5 Swipes können User zuverlässig die gewünschten Gesten ausführen. Sehr vereinzelt kommt es auch danach zu falsch erkannten Gesten.\\
+		\hline
+		Erkennt der User, dass die Screens zyklisch angeordnet sind? Zum Beispiel die Erkenntnis, dass von Screen vier direkt zu Screen eins navigiert werden kann.&Einer von 8 Usern wählten bei der Navigation durch die Screens wiederholt suboptimale Routen, die bei einer rein sequentiellen Anordnung sinnvoll wären\\
+		\hline
+		Ist die Schrift gut lesbar?&
+		Alle Usern konnten die Schrift gut lesen\\
+		\hline
+		Gibt es Probleme beim Verständnis der gezeigten Inhalte? & Alle User konnten die gezeigten Inhalte versehen\\
+		\hline
 	\end{tabularx}
 	
 	
@@ -347,8 +358,10 @@
 	
 	
 	\section{Arbeitsaufteilung}
-	\subsection*{Planen des menschzentrierten Gestaltungsprozesses}
+	\subsection*{Projektplanung}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
+		\hline
+		Team & Aussuchen der Bauteile\\
 		\hline
 		Patrick Gruber & Erstellen der Kostenaufstellung\\
 		\hline
@@ -363,6 +376,14 @@
 	\subsection*{Verstehen und Festlegen des Nutzungskontexts}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
+		Team & \begin{itemize}
+			\setlength{\itemsep}{-0.5em}
+			\item Erstellen des Trello-Boards
+			\item Erstellung von UserStories
+			\item Konzipierung Interviews
+			\item Durchführung Interviews 
+		\end{itemize}\\
+		\hline
 		Patrick Gruber & \\
 		\hline
 		Tobias Gubo & \\
@@ -376,69 +397,65 @@
 	\subsection*{Erarbeitung von Gestaltungslösungen zur Erfüllung des Nutzungskontexts}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
-		Patrick Gruber & 
-		\begin{itemize}
+		Team & \begin{itemize}
 			\setlength{\itemsep}{-0.6em}
 			\item  Validierung der Interaktionsmöglichkeiten
 			\item  Entwurf der Navigations zwischen den Seiten
-			\item Erstellen des Trello-Boards
-			\item Durchführen des Card-Sortings
-			\item Paper Prototyping
-			\item Implementierung der Gestenerkennung
-			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
-		\end{itemize}\\
-		\hline
-		Tobias Gubo & \begin{itemize}
-			\setlength{\itemsep}{-0.6em}
-			\item  Validierung der Interaktionsmöglichkeiten
-			\item  Entwurf der Navigations zwischen den Seiten
-			\item Erstellen des Trello-Boards
-			\item Durchführen des Card-Sortings
-			\item Paper Prototyping
-			\item Prototyping Setup vo vue.JS und node.JS einrichten
-			\item Implemetierung der Socket Kommunikation
-			\item Implemetierung der Gestenerkennung
-			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
-		\end{itemize} \\
-		\hline
-		Michael Lazik &  \begin{itemize}
-			\setlength{\itemsep}{-0.6em}
-			\item  Validierung der Interaktionsmöglichkeiten
-			\item  Entwurf der Navigations zwischen den Seiten
-			\item Erstellen des Trello-Boards
-			\item Durchführen des Card-Sortings
-			\item Paper Prototyping
-			\item Implementierung der Spiegel UI mittels vue.JS
-			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
-		\end{itemize}\\
-		\hline
-		Marcus Müller &  \begin{itemize}
-			\setlength{\itemsep}{-0.6em}
-			\item  Validierung der Interaktionsmöglichkeiten
-			\item  Entwurf der Navigations zwischen den Seiten
-			\item Erstellen des Trello-Boards
 			\item Durchführen des Card-Sortings
 			\item Paper Prototyping
 			\item Erstellung eines Konzepts zur Durchführung von Usability Tests am Prototypen
 		\end{itemize}\\
+		\hline
+		Patrick Gruber & \\
+		\hline
+		Tobias Gubo &  \\
+		\hline
+		Michael Lazik &  \\
+		\hline
+		Marcus Müller & \\
 		\hline
 	\end{tabularx}
 
 	\subsection*{Aufbau Software System}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
 		\hline
-		Patrick Gruber & \\
+		Team & \\
 		\hline
-		Tobias Gubo & \\
+		Patrick Gruber & 
+		\begin{itemize}
+			\setlength{\itemsep}{-0.6em}
+			\item Implementierung der Gestenerkennung
+			\item Zusammenbau des Spiegels
+		\end{itemize}\\
 		\hline
-		Michael Lazik & \\
+		Tobias Gubo & \begin{itemize}
+			\setlength{\itemsep}{-0.6em}
+			\item Prototyping Setup vo vue.JS und node.JS einrichten
+			\item Implemetierung der Socket Kommunikation
+			\item Implemetierung der Gestenerkennung
+		\end{itemize}\\
 		\hline
-		Marcus Müller & \\
+		Michael Lazik & \begin{itemize}
+			\setlength{\itemsep}{-0.6em}
+			\item Implementierung der Spiegel UI mittels vue.JS
+		\end{itemize}\\
+		\hline
+		Marcus Müller & \begin{itemize}
+			\setlength{\itemsep}{-0.6em}
+			\item Debugging-Interface 
+		\end{itemize} \\
 		\hline
 	\end{tabularx}
 
 	\subsection*{Evaluierung der Gestaltungslösung anhand der Nutzungsanforderung}
 	\begin{tabularx}{0.95\textwidth}{|l|X|}
+		\hline
+		Team & \begin{itemize}
+			\item Erstellen der Fragebögen
+			\item Befragung der Probanden
+			\item Erstellen eines Evaluierungskonzept für den Prototypen
+			\item Durchführung der Evaluierung 
+		\end{itemize}\\
 		\hline
 		Patrick Gruber & \\
 		\hline
